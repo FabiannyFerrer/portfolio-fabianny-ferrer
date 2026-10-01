@@ -7,42 +7,81 @@
     <title>Fabianny Ferrer - Portfolio</title>
 </head>
 <body>
-    <h1>Fabi Ferrer</h1>
-    <p class="destacado">
-        De la gestión administrativa al mundo IT
-    </p>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Fabi Ferrer</a>
+            <ul class="enlaces">
+                <li><a class="actual" href="index.html">Inicio</a></li>
+                <li><a href="./pages/proyectos.html">Proyectos</a></li>
+                <li><a href="./pages/aprendizaje.html">Aprendizaje</a></li>
+                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Construyendo mi camino en tecnología, un proyecto a la vez</h2>
+    <main> 
+        <!-- Usé clases múltiples para poder resaltar luego el color de esta sección
+         me parece que no lo vimos en clase, pero estuve buscando cómo hacerlo -->
+        <section class="banda banda-oscura hero">
+            <div class="hero-texto">
+                <h1>Fabi Ferrer</h1>
+                 <p class="destacado destacado-claro">De la gestión administrativa al mundo IT</p>
+            </div>
+        <div class="monograma">FF</div>
+        </section>
 
-    <p>
-    Vengo de Venezuela y hoy vivo en Argentina. Actualmente trabajo de forma remota
-    dando soporte a operaciones de Amazon Seller Central. Ese trabajo diario me hizo
-    desarrollar buenos hábitos de organización; habilidades que ahora estoy
-    llevando al mundo del desarrollo.
-    </p>
+    <section class="banda">
+        <h2>Construyendo mi camino en tecnología, un proyecto a la vez</h2>
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <p>
+                    Vengo de Venezuela y hoy vivo en Argentina. Actualmente trabajo de forma remota
+                    dando soporte a operaciones de Amazon Seller Central. Ese trabajo diario me hizo
+                    desarrollar buenos hábitos de organización; habilidades que ahora estoy
+                    llevando al mundo del desarrollo.
+                </p>
+            </article>
 
-    <p>
-    Este sitio nació como parte de mi proceso de aprendizaje: lo voy construyendo y
-    mejorando a medida que avanzo en la Licenciatura en Sistemas de Información
-    (UBA) y en la diplomatura Full Stack de Coderhouse. Es, literalmente, un reflejo
-    en tiempo real de lo que voy aprendiendo.
-    </p>
+            <article class="tarjeta">
+                <p>
+                    Este sitio nació como parte de mi proceso de aprendizaje: lo voy construyendo y
+                    mejorando a medida que avanzo en la Licenciatura en Sistemas de Información
+                    (UBA) y en la diplomatura Full Stack de Coderhouse. Es, literalmente, un reflejo
+                    en tiempo real de lo que voy aprendiendo.
+                </p>
+            </article>
+        </div>
+    </section>
+    
+    <section class="banda banda-suave">
+       <div class="tarjetas">  
+            <article class="tarjeta">
+                <h2>Áreas en las que me estoy formando ahora mismo</h2>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git y GitHub</li>
+                    <li>JavaScript</li>
+                </ol>
+            </article>
 
-    <h2>Áreas en las que me estoy formando ahora mismo</h2>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git y GitHub</li>
-        <li>JavaScript</li>
-    </ol>
+            <article class="tarjeta">
+                <h2>Lo que aporto más allá del código</h2>
+                <ul>
+                    <li>Capacidad de organización y planificación</li>
+                    <li>Comunicación clara en entornos remotos</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Atención al detalle y resolución de problemas</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    </main>
 
-    <h2>Lo que aporto más allá del código</h2>
-    <ul>
-         <li>Capacidad de organización y planificación</li>
-         <li>Comunicación clara en entornos remotos</li>
-         <li>Trabajo en equipo</li>
-         <li>Atención al detalle y resolución de problemas</li>
-  </ul>
+    <footer>
+        <p>Fabianny Ferrer © 2026 — Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
