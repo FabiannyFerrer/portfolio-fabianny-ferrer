@@ -8,6 +8,10 @@ Sitio web personal y profesional desarrollado como parte de mi transición hacia
 |:---:|:---:|:---:|
 | HTML5 | CSS | Git |
 
+## Colaboración
+
+La mejora de este README se desarrolló siguiendo un flujo de **Feature Branching**: se registró la tarea en un Issue de GitHub, se trabajó en una rama independiente (`mejorar-readme`) con commits descriptivos y los cambios se integraron a `main` mediante un Pull Request revisado.
+
 ## Estado del proyecto
 
 En desarrollo
