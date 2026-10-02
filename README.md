@@ -16,8 +16,16 @@ La mejora de este README se desarrolló siguiendo un flujo de **Feature Branchin
 
 En desarrollo
 
-## Cómo empezar
-Abrí el archivo index.html en tu navegador para ver el sitio.
+## Cómo visualizar el proyecto
+
+1. Cloná el repositorio:
+
+```bash
+   git clone https://github.com/FabiannyFerrer/portfolio-fabianny-ferrer.git
+```
+
+2. Entrá a la carpeta del proyecto.
+3. Abrí el archivo `index.html` en tu navegador.
 
 ## Autor
 
