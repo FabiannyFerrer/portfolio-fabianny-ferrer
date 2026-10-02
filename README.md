@@ -4,17 +4,28 @@ Sitio web personal y profesional desarrollado como parte de mi transición hacia
 
 ## Tecnologías
 
-- HTML
-- CSS
-- Git
-- GitHub
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="56" height="56"/> |
+|:---:|:---:|:---:|
+| HTML5 | CSS | Git |
+
+## Colaboración
+
+La mejora de este README se desarrolló siguiendo un flujo de **Feature Branching**: se registró la tarea en un Issue de GitHub, se trabajó en una rama independiente (`mejorar-readme`) con commits descriptivos y los cambios se integraron a `main` mediante un Pull Request revisado.
 
 ## Estado del proyecto
 
 En desarrollo
 
-## Cómo empezar
-Abrí el archivo index.html en tu navegador para ver el sitio.
+## Cómo visualizar el proyecto
+
+1. Cloná el repositorio:
+
+```bash
+   git clone https://github.com/FabiannyFerrer/portfolio-fabianny-ferrer.git
+```
+
+2. Entrá a la carpeta del proyecto.
+3. Abrí el archivo `index.html` en tu navegador.
 
 ## Autor
 
