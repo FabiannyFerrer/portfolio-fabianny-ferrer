@@ -4,7 +4,7 @@ Sitio web personal y profesional desarrollado como parte de mi transición hacia
 
 ## Tecnologías
 
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="56" height="56"/> |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Ícono HTML5" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Ícono CSS" width="56" height="56"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Ícono Git" width="56" height="56"/> |
 |:---:|:---:|:---:|
 | HTML5 | CSS | Git |
 
