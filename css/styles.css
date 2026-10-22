@@ -149,6 +149,7 @@ li {
     box-shadow: 0 0 0 0.2rem var(--color-acento-claro);
 }
 
+/* ENLACES Y LOGO */
 .logo {
     font-family: var(--fuente-titulos);
     font-size: 1.5rem;
@@ -157,6 +158,49 @@ li {
 
 .enlace {
     color: var(--color-acento);
+}
+
+/* CARD (componente de Bootstrap con mi paleta) */
+.card-proyecto {
+    --bs-card-bg: var(--color-fondo-tarjeta);
+    --bs-card-border-color: var(--color-borde);
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
+    --bs-card-color: var(--color-texto);
+    --bs-card-title-color: var(--color-primario);
+    --bs-card-spacer-x: clamp(1.25rem, 4vw, 2.5rem);
+    --bs-card-spacer-y: clamp(1.25rem, 4vw, 2.5rem);
+    border-top: 6px solid var(--color-acento);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(59, 31, 74, 0.2);
+}
+
+.card-proyecto:active {
+    transform: translateY(-1px);
+}
+
+/* BOTÓN (btn de Bootstrap con mi paleta) */
+.btn-boton {
+    --bs-btn-bg: var(--color-acento);
+    --bs-btn-border-color: var(--color-acento);
+    --bs-btn-color: var(--color-texto-claro);
+    --bs-btn-hover-bg: var(--color-primario);
+    --bs-btn-hover-border-color: var(--color-primario);
+    --bs-btn-hover-color: var(--color-texto-claro);
+    --bs-btn-active-bg: var(--color-primario-oscuro);
+    --bs-btn-active-border-color: var(--color-primario-oscuro);
+    --bs-btn-active-color: var(--color-texto-claro);
+    --bs-btn-focus-shadow-rgb: 255, 155, 151;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-boton:active {
+    transform: scale(0.97);
 }
 
 /* CAROUSEL (galería) */
