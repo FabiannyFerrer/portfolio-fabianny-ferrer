@@ -101,40 +101,58 @@ li {
     font-weight: 600;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+/* NAVBAR (Bootstrap + estilo propio) */
+.barra-nav {
     padding: 1rem var(--espacio-lateral);
     background-color: var(--color-primario-oscuro);
+}
+
+.barra-nav .container-fluid {
+    padding: 0;
+}
+
+.barra-nav .navbar-nav {
+    gap: 0.5rem;
+}
+
+.barra-nav .logo {
+    color: var(--color-texto-claro);
+    transition: color 0.3s ease;
+}
+
+.barra-nav .nav-link {
+    color: var(--color-texto-claro);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.barra-nav .logo:hover,
+.barra-nav .logo:focus,
+.barra-nav .nav-link:hover,
+.barra-nav .nav-link:focus,
+.barra-nav .nav-link.active {
+    color: var(--color-acento-claro);
+}
+
+.barra-nav .nav-link:active {
+    transform: scale(0.96);
+}
+
+.barra-nav .navbar-toggler {
+    border-color: var(--color-acento-claro);
+    transition: box-shadow 0.3s ease;
+}
+
+.barra-nav .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-acento-claro);
 }
 
 .logo {
     font-family: var(--fuente-titulos);
     font-size: 1.5rem;
     font-weight: 700;
-}
-
-.enlaces {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    padding-left: 0;
-    list-style: none;
-}
-
-.enlaces li {
-    color: var(--color-texto-claro);
-    font-size: 1rem;
-}
-
-.actual {
-    color: var(--color-acento-claro);
 }
 
 .enlace {
@@ -237,15 +255,6 @@ footer {
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .enlaces {
-        gap: 1.5rem;
-    }
-
     .hero {
         grid-template-columns: 1fr auto;
         grid-template-areas: "texto monograma";
@@ -259,10 +268,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    .enlaces {
-        gap: 2rem;
-    }
-
     .monograma {
         width: 10rem;
         height: 10rem;
