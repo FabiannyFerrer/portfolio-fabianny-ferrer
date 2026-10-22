@@ -159,6 +159,39 @@ li {
     color: var(--color-acento);
 }
 
+/* CAROUSEL (galería) */
+.galeria {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.galeria .carousel-item img {
+    height: clamp(14rem, 56vw, 32rem);
+    object-fit: cover;
+}
+
+.galeria .carousel-caption {
+    background-color: rgba(42, 21, 54, 0.8);
+    border-radius: 4px;
+}
+
+.galeria .carousel-caption p {
+    font-size: 1rem;
+}
+
+.galeria .carousel-control-prev,
+.galeria .carousel-control-next {
+    transition: background-color 0.3s ease;
+}
+
+.galeria .carousel-control-prev:hover,
+.galeria .carousel-control-next:hover,
+.galeria .carousel-control-prev:focus,
+.galeria .carousel-control-next:focus {
+    background-color: rgba(42, 21, 54, 0.5);
+}
+
 /* MAIN Y BANDAS */
 main {
     display: flex;
@@ -178,6 +211,10 @@ main {
 
 .banda-suave {
     background-color: var(--color-fondo-suave);
+}
+
+.banda-galeria {
+    padding-top: 0;
 }
 
 /* HERO (GRID CON ÁREAS) */
