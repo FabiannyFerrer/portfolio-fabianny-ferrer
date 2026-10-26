@@ -1,87 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Fabianny Ferrer - Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <a class="logo" href="index.html">Fabi Ferrer</a>
-            <ul class="enlaces">
-                <li><a class="actual" href="index.html">Inicio</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/aprendizaje.html">Aprendizaje</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+      <nav class="navbar navbar-expand-lg barra-nav" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">Fabi Ferrer</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/aprendizaje.html"
+                  >Aprendizaje</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobre-mi.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main> 
-        <!-- Usé clases múltiples para poder resaltar luego el color de esta sección
+    <main>
+      <!-- Usé clases múltiples para poder resaltar luego el color de esta sección
          me parece que no lo vimos en clase, pero estuve buscando cómo hacerlo -->
-        <section class="banda banda-oscura hero">
-            <div class="hero-texto">
-                <h1>Fabi Ferrer</h1>
-                 <p class="destacado destacado-claro">De la gestión administrativa al mundo IT</p>
-            </div>
+      <section class="banda banda-oscura hero">
+        <div class="hero-texto">
+          <h1>Fabi Ferrer</h1>
+          <p class="destacado destacado-claro">
+            De la gestión administrativa al mundo IT
+          </p>
+        </div>
         <div class="monograma">FF</div>
-        </section>
+      </section>
 
-    <section class="banda">
+      <section class="banda">
         <h2>Construyendo mi camino en tecnología, un proyecto a la vez</h2>
         <div class="tarjetas">
-             <article class="tarjeta tarjeta-uno">
-                <p>
-                    Vengo de Venezuela y hoy vivo en Argentina. Actualmente trabajo de forma remota
-                    dando soporte a operaciones de Amazon Seller Central. Ese trabajo diario me hizo
-                    desarrollar buenos hábitos de organización; habilidades que ahora estoy
-                    llevando al mundo del desarrollo.
-                </p>
-            </article>
+          <article class="tarjeta tarjeta-uno">
+            <p>
+              Vengo de Venezuela y hoy vivo en Argentina. Actualmente trabajo de
+              forma remota dando soporte a operaciones de Amazon Seller Central.
+              Ese trabajo diario me hizo desarrollar buenos hábitos de
+              organización; habilidades que ahora estoy llevando al mundo del
+              desarrollo.
+            </p>
+          </article>
 
-            <article class="tarjeta tarjeta-dos">
-                <p>
-                    Este sitio nació como parte de mi proceso de aprendizaje: lo voy construyendo y
-                    mejorando a medida que avanzo en la Licenciatura en Sistemas de Información
-                    (UBA) y en la diplomatura Full Stack de Coderhouse. Es, literalmente, un reflejo
-                    en tiempo real de lo que voy aprendiendo.
-                </p>
-            </article>
+          <article class="tarjeta tarjeta-dos">
+            <p>
+              Este sitio nació como parte de mi proceso de aprendizaje: lo voy
+              construyendo y mejorando a medida que avanzo en la Licenciatura en
+              Sistemas de Información (UBA) y en la diplomatura Full Stack de
+              Coderhouse. Es, literalmente, un reflejo en tiempo real de lo que
+              voy aprendiendo.
+            </p>
+          </article>
         </div>
-    </section>
-    
-    <section class="banda banda-suave">
-       <div class="tarjetas">  
-            <article class="tarjeta tarjeta-uno">
-                <h2>Áreas en las que me estoy formando ahora mismo</h2>
-                <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Git y GitHub</li>
-                    <li>JavaScript</li>
-                </ol>
-            </article>
+      </section>
 
-            <article class="tarjeta tarjeta-dos">
-                <h2>Lo que aporto más allá del código</h2>
-                <ul>
-                    <li>Capacidad de organización y planificación</li>
-                    <li>Comunicación clara en entornos remotos</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Atención al detalle y resolución de problemas</li>
-                </ul>
-            </article>
+      <section class="banda banda-galeria">
+        <h2>Mi recorrido en imágenes</h2>
+        <div id="galeriaProyectos" class="carousel slide galeria">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/galeria-amazon.png"
+                class="d-block w-100"
+                alt="Laptop con un panel de ventas de Amazon Seller Central sobre una mesa de reunión"/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mi día a día</h5>
+                <p>
+                  Soporte a operaciones de Amazon Seller Central: Control interno y
+                  atención al detalle.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/galeria-universidad.png"
+                class="d-block w-100"
+                alt="Tablet con el acceso al campus virtual de la FCE-UBA sobre una mesa de madera"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mi formación</h5>
+                <p>Licenciatura en Sistemas de Información en la FCE-UBA.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/galeria-codigo.png"
+                class="d-block w-100"
+                alt="Laptop con el código HTML de mi portfolio en un escritorio"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mi próximo paso</h5>
+                <p>
+                  Aprendiendo desarrollo web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#galeriaProyectos"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#galeriaProyectos"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-    </section>
+      </section>
+
+      <section class="banda banda-suave">
+        <div class="tarjetas">
+          <article class="tarjeta tarjeta-uno">
+            <h2>Áreas en las que me estoy formando ahora mismo</h2>
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git y GitHub</li>
+              <li>JavaScript</li>
+            </ol>
+          </article>
+
+          <article class="tarjeta tarjeta-dos">
+            <h2>Lo que aporto más allá del código</h2>
+            <ul>
+              <li>Capacidad de organización y planificación</li>
+              <li>Comunicación clara en entornos remotos</li>
+              <li>Trabajo en equipo</li>
+              <li>Atención al detalle y resolución de problemas</li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Fabianny Ferrer © 2026 — Todos los derechos reservados</p>
+      <p>Fabianny Ferrer © 2026 — Todos los derechos reservados</p>
     </footer>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
