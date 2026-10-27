@@ -347,7 +347,7 @@ footer {
 }
 
 .hero-texto {
-    animation: entrada-suave 0.6s ease-out forwards;
+    animation: entrada-suave 0.5s ease-out forwards;
 }
 
 /* MEDIA QUERIES */
@@ -380,7 +380,7 @@ footer {
 
 /* ACCESIBILIDAD: movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
-     *,
+    *,
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
