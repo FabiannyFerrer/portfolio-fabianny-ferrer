@@ -9,6 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Proyectos en Curso - Fabianny Ferrer</title>
   </head>
@@ -69,7 +70,7 @@
       <section class="banda">
         <div class="container-fluid px-0">
           <div class="row">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="col-12 col-md-6 mb-3 mb-md-0" data-aos="fade-up">
               <div class="card card-proyecto h-100">
                 <div class="card-body">
                   <h2 class="card-title">Este portfolio</h2>
@@ -80,7 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="card card-proyecto h-100">
                 <div class="card-body">
                   <h2 class="card-title">Vigía E-commerce</h2>
@@ -112,5 +113,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      if (typeof AOS !== "undefined") {
+    AOS.init({ once: false, duration: 500 });
+  }
+    </script>
   </body>
 </html>
