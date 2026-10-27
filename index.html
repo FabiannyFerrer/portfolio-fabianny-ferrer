@@ -9,6 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Fabianny Ferrer - Portfolio</title>
   </head>
@@ -56,8 +57,6 @@
     </header>
 
     <main>
-      <!-- Usé clases múltiples para poder resaltar luego el color de esta sección
-         me parece que no lo vimos en clase, pero estuve buscando cómo hacerlo -->
       <section class="banda banda-oscura hero">
         <div class="hero-texto">
           <h1>Fabi Ferrer</h1>
@@ -71,7 +70,7 @@
       <section class="banda">
         <h2>Construyendo mi camino en tecnología, un proyecto a la vez</h2>
         <div class="tarjetas">
-          <article class="tarjeta tarjeta-uno">
+          <article class="tarjeta tarjeta-uno" data-aos="fade-up">
             <p>
               Vengo de Venezuela y hoy vivo en Argentina. Actualmente trabajo de
               forma remota dando soporte a operaciones de Amazon Seller Central.
@@ -81,7 +80,11 @@
             </p>
           </article>
 
-          <article class="tarjeta tarjeta-dos">
+          <article
+            class="tarjeta tarjeta-dos"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <p>
               Este sitio nació como parte de mi proceso de aprendizaje: lo voy
               construyendo y mejorando a medida que avanzo en la Licenciatura en
@@ -101,12 +104,13 @@
               <img
                 src="assets/img/galeria-amazon.png"
                 class="d-block w-100"
-                alt="Laptop con un panel de ventas de Amazon Seller Central sobre una mesa de reunión"/>
+                alt="Laptop con un panel de ventas de Amazon Seller Central sobre una mesa de reunión"
+              />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Mi día a día</h5>
                 <p>
-                  Soporte a operaciones de Amazon Seller Central: Control interno y
-                  atención al detalle.
+                  Soporte a operaciones de Amazon Seller Central: Control
+                  interno y atención al detalle.
                 </p>
               </div>
             </div>
@@ -129,9 +133,7 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Mi próximo paso</h5>
-                <p>
-                  Aprendiendo desarrollo web.
-                </p>
+                <p>Aprendiendo desarrollo web.</p>
               </div>
             </div>
           </div>
@@ -159,7 +161,7 @@
 
       <section class="banda banda-suave">
         <div class="tarjetas">
-          <article class="tarjeta tarjeta-uno">
+          <article class="tarjeta tarjeta-uno" data-aos="fade-up">
             <h2>Áreas en las que me estoy formando ahora mismo</h2>
             <ol>
               <li>HTML</li>
@@ -169,7 +171,11 @@
             </ol>
           </article>
 
-          <article class="tarjeta tarjeta-dos">
+          <article
+            class="tarjeta tarjeta-dos"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h2>Lo que aporto más allá del código</h2>
             <ul>
               <li>Capacidad de organización y planificación</li>
@@ -191,5 +197,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      if (typeof AOS !== "undefined") {
+        AOS.init({ once: false, duration: 500 });
+      }
+    </script>
   </body>
 </html>
