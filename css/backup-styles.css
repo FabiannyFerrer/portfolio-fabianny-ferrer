@@ -101,44 +101,139 @@ li {
     font-weight: 600;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+/* NAVBAR (Bootstrap + estilo propio) */
+.barra-nav {
     padding: 1rem var(--espacio-lateral);
     background-color: var(--color-primario-oscuro);
 }
 
+.barra-nav .container-fluid {
+    padding: 0;
+}
+
+.barra-nav .navbar-nav {
+    gap: 0.5rem;
+}
+
+.barra-nav .logo {
+    color: var(--color-texto-claro);
+    transition: color 0.3s ease;
+}
+
+.barra-nav .nav-link {
+    color: var(--color-texto-claro);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.barra-nav .logo:hover,
+.barra-nav .logo:focus,
+.barra-nav .nav-link:hover,
+.barra-nav .nav-link:focus,
+.barra-nav .nav-link.active {
+    color: var(--color-acento-claro);
+}
+
+.barra-nav .nav-link:active {
+    transform: scale(0.96);
+}
+
+.barra-nav .navbar-toggler {
+    border-color: var(--color-acento-claro);
+    transition: box-shadow 0.3s ease;
+}
+
+.barra-nav .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-acento-claro);
+}
+
+/* ENLACES Y LOGO */
 .logo {
     font-family: var(--fuente-titulos);
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.enlaces {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    padding-left: 0;
-    list-style: none;
+.enlace {
+    color: var(--color-acento);
 }
 
-.enlaces li {
-    color: var(--color-texto-claro);
+/* CARD (componente de Bootstrap con mi paleta) */
+.card-proyecto {
+    --bs-card-bg: var(--color-fondo-tarjeta);
+    --bs-card-border-color: var(--color-borde);
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
+    --bs-card-color: var(--color-texto);
+    --bs-card-title-color: var(--color-primario);
+    --bs-card-spacer-x: clamp(1.25rem, 4vw, 2.5rem);
+    --bs-card-spacer-y: clamp(1.25rem, 4vw, 2.5rem);
+    border-top: 6px solid var(--color-acento);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(59, 31, 74, 0.2);
+}
+
+.card-proyecto:active {
+    transform: translateY(-1px);
+}
+
+/* BOTÓN (btn de Bootstrap con mi paleta) */
+.btn-boton {
+    --bs-btn-bg: var(--color-acento);
+    --bs-btn-border-color: var(--color-acento);
+    --bs-btn-color: var(--color-texto-claro);
+    --bs-btn-hover-bg: var(--color-primario);
+    --bs-btn-hover-border-color: var(--color-primario);
+    --bs-btn-hover-color: var(--color-texto-claro);
+    --bs-btn-active-bg: var(--color-primario-oscuro);
+    --bs-btn-active-border-color: var(--color-primario-oscuro);
+    --bs-btn-active-color: var(--color-texto-claro);
+    --bs-btn-focus-shadow-rgb: 255, 155, 151;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-boton:active {
+    transform: scale(0.97);
+}
+
+/* CAROUSEL (galería) */
+.galeria {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.galeria .carousel-item img {
+    height: clamp(14rem, 56vw, 32rem);
+    object-fit: cover;
+}
+
+.galeria .carousel-caption {
+    background-color: rgba(42, 21, 54, 0.8);
+    border-radius: 4px;
+}
+
+.galeria .carousel-caption p {
     font-size: 1rem;
 }
 
-.actual {
-    color: var(--color-acento-claro);
+.galeria .carousel-control-prev,
+.galeria .carousel-control-next {
+    transition: background-color 0.3s ease;
 }
 
-.enlace {
-    color: var(--color-acento);
+.galeria .carousel-control-prev:hover,
+.galeria .carousel-control-next:hover,
+.galeria .carousel-control-prev:focus,
+.galeria .carousel-control-next:focus {
+    background-color: rgba(42, 21, 54, 0.5);
 }
 
 /* MAIN Y BANDAS */
@@ -160,6 +255,10 @@ main {
 
 .banda-suave {
     background-color: var(--color-fondo-suave);
+}
+
+.banda-galeria {
+    padding-top: 0;
 }
 
 /* HERO (GRID CON ÁREAS) */
@@ -194,6 +293,11 @@ main {
     font-family: var(--fuente-titulos);
     font-size: 2.75rem;
     font-weight: 700;
+    transition: transform 0.3s ease-out;
+}
+
+.monograma:hover {
+    transform: scale(1.08);
 }
 
 /* TARJETAS (GRID CON ÁREAS) */
@@ -235,17 +339,19 @@ footer {
     text-align: center;
 }
 
+/* ANIMACIONES */
+@keyframes entrada-suave {
+    0% { opacity: 0; transform: translateY(24px); }
+    60% { opacity: 1; transform: translateY(-4px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-texto {
+    animation: entrada-suave 0.5s ease-out forwards;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .enlaces {
-        gap: 1.5rem;
-    }
-
     .hero {
         grid-template-columns: 1fr auto;
         grid-template-areas: "texto monograma";
@@ -259,10 +365,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    .enlaces {
-        gap: 2rem;
-    }
-
     .monograma {
         width: 10rem;
         height: 10rem;
@@ -273,5 +375,16 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "tarjeta-uno tarjeta-dos";
         gap: 2rem;
+    }
+}
+
+/* ACCESIBILIDAD: movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
