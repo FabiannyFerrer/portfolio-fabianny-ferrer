@@ -339,6 +339,17 @@ footer {
     text-align: center;
 }
 
+/* ANIMACIONES */
+@keyframes entrada-suave {
+    0% { opacity: 0; transform: translateY(24px); }
+    60% { opacity: 1; transform: translateY(-4px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-texto {
+    animation: entrada-suave 0.6s ease-out forwards;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
     .hero {
@@ -353,17 +364,6 @@ footer {
     }
 }
 
-/* ANIMACIONES */
-@keyframes entrada-suave {
-    0% { opacity: 0; transform: translateY(24px); }
-    60% { opacity: 1; transform: translateY(-4px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-.hero-texto {
-    animation: entrada-suave 0.6s ease-out forwards;
-}
-
 @media (min-width: 1024px) {
     .monograma {
         width: 10rem;
@@ -375,5 +375,16 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "tarjeta-uno tarjeta-dos";
         gap: 2rem;
+    }
+}
+
+/* ACCESIBILIDAD: movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+     *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
