@@ -1,0 +1,34 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+// TARJETA
+.tarjeta {
+    @include m.flex(column, nowrap, flex-start, stretch, v.$espacio-sm);
+    padding: v.$espacio-tarjeta;
+    background-color: v.$color-fondo-tarjeta;
+    border: v.$borde-fino solid v.$color-borde;
+    border-top: v.$borde-acento solid v.$color-acento;
+}
+
+// CARD (componente de Bootstrap con mi paleta)
+.card-proyecto {
+    --bs-card-bg: #{v.$color-fondo-tarjeta};
+    --bs-card-border-color: #{v.$color-borde};
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
+    --bs-card-color: #{v.$color-texto};
+    --bs-card-title-color: #{v.$color-primario};
+    --bs-card-spacer-x: #{v.$espacio-tarjeta};
+    --bs-card-spacer-y: #{v.$espacio-tarjeta};
+    border-top: v.$borde-acento solid v.$color-acento;
+    transition: transform v.$duracion-base ease, box-shadow v.$duracion-base ease;
+
+    &:hover {
+        transform: translateY(v.$elevacion-hover);
+        box-shadow: v.$sombra-tarjeta;
+    }
+
+    &:active {
+        transform: translateY(v.$elevacion-active);
+    }
+}

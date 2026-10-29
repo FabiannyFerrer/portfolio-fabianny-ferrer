@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+
+// BOTÓN (btn de Bootstrap con mi paleta)
+.btn-boton {
+    --bs-btn-bg: #{v.$color-acento};
+    --bs-btn-border-color: #{v.$color-acento};
+    --bs-btn-color: #{v.$color-texto-claro};
+    --bs-btn-hover-bg: #{v.$color-primario};
+    --bs-btn-hover-border-color: #{v.$color-primario};
+    --bs-btn-hover-color: #{v.$color-texto-claro};
+    --bs-btn-active-bg: #{v.$color-primario-oscuro};
+    --bs-btn-active-border-color: #{v.$color-primario-oscuro};
+    --bs-btn-active-color: #{v.$color-texto-claro};
+    --bs-btn-focus-shadow-rgb: #{v.$color-acento-claro-rgb};
+    font-weight: v.$peso-semibold;
+    transition: background-color v.$duracion-base ease, transform v.$duracion-corta ease;
+
+    &:active {
+        transform: scale(0.97);
+    }
+}

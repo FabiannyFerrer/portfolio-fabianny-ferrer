@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+
+// CAROUSEL
+.galeria {
+    width: 100%;
+    max-width: v.$galeria-ancho-max;
+    margin: 0 auto;
+
+    .carousel-item img {
+        height: v.$galeria-alto;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        background-color: v.$color-overlay;
+        border-radius: v.$radio-borde;
+
+        p {
+            font-size: v.$texto-chico;
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transition: background-color v.$duracion-base ease;
+
+        &:hover,
+        &:focus {
+            background-color: v.$color-overlay-suave;
+        }
+    }
+}
