@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+// FLEX
+@mixin flex($fd, $fw, $jc, $ai, $g) {
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+// MEDIA QUERIES
+@mixin tablet {
+    @media (min-width: v.$breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$breakpoint-desktop) {
+        @content;
+    }
+}

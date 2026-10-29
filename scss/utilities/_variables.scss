@@ -1,0 +1,78 @@
+// COLORES
+$color-fondo-pagina: #f5eafa;
+$color-fondo-suave: #ebd9f5;
+$color-texto: #2b2b2b;
+$color-acento: #bd3836;
+$color-acento-claro: #ff9b97;
+$color-primario: #3b1f4a;
+$color-primario-oscuro: #2a1536;
+$color-fondo-tarjeta: #fbf6fd;
+$color-borde: #d9c3e6;
+$color-texto-claro: #ffffff;
+$color-acento-claro-rgb: 255, 155, 151;
+$color-overlay: rgba(42, 21, 54, 0.8);
+$color-overlay-suave: rgba(42, 21, 54, 0.5);
+
+// TIPOGRAFÍA
+$fuente-texto: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$fuente-titulos: Georgia, "Times New Roman", serif;
+
+$title-size: clamp(2.25rem, 9vw, 4rem);
+$subtitle-size: clamp(1.25rem, 3vw, 1.625rem);
+$destacado-size: clamp(1.125rem, 2.5vw, 1.375rem);
+$body-size: 1.125rem;
+$h3-size: 1.375rem;
+$link-size: 1.0625rem;
+$logo-size: 1.5rem;
+$texto-chico: 1rem;
+
+$peso-normal: 400;
+$peso-semibold: 600;
+$peso-bold: 700;
+
+// ESPACIADOS
+$espacio-lateral: clamp(1.25rem, 5vw, 2.5rem);
+$espacio-seccion: clamp(2.5rem, 7vw, 4rem);
+$espacio-tarjeta: clamp(1.25rem, 4vw, 2.5rem);
+
+$espacio-xs: 8px;
+$espacio-sm: 12px;
+$espacio-md: 1rem;
+$espacio-lg: 1.5rem;
+$espacio-xl: 2rem;
+$espacio-nav: 0.5rem;
+$espacio-footer-x: 1.25rem;
+$sangria-lista: 24px;
+
+// BORDES, SOMBRAS Y FOCO
+$borde-fino: 1px;
+$borde-acento: 6px;
+$radio-borde: 4px;
+$anillo-foco: 0.2rem;
+$sombra-tarjeta: 0 8px 20px rgba(59, 31, 74, 0.2);
+
+// TRANSICIONES Y ANIMACIONES
+$duracion-corta: 0.2s;
+$duracion-base: 0.3s;
+$duracion-entrada: 0.5s;
+
+// GALERÍA (CAROUSEL)
+$galeria-ancho-max: 60rem;
+$galeria-alto: clamp(14rem, 56vw, 32rem);
+
+// MOBILE-FIRST
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// MONOGRAMA
+$monograma-size: 7.5rem;
+$monograma-size-tablet: 9rem;
+$monograma-size-desktop: 10rem;
+$monograma-fuente: 2.75rem;
+$monograma-fuente-tablet: 3rem;
+$monograma-fuente-desktop: 3.5rem;
+$monograma-padding: 1.25rem;
+
+// EFECTOS HOVER
+$elevacion-hover: -4px;
+$elevacion-active: -1px;
