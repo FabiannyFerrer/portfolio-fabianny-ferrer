@@ -1,0 +1,28 @@
+@use "../utilities/variables" as v;
+
+// BARRA SUPERIOR
+.barra-nav {
+    padding: v.$espacio-md v.$espacio-lateral;
+    background-color: v.$color-primario-oscuro;
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .logo {
+        color: v.$color-texto-claro;
+        transition: color v.$duracion-base ease;
+
+        &:hover,
+        &:focus {
+            color: v.$color-acento-claro;
+        }
+    }
+}
+
+// LOGO
+.logo {
+    font-family: v.$fuente-titulos;
+    font-size: v.$logo-size;
+    font-weight: v.$peso-bold;
+}

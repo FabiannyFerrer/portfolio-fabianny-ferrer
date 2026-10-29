@@ -1,0 +1,35 @@
+@use "../utilities/variables" as v;
+
+// LINKS Y BOTÓN DEL MENÚ
+.barra-nav {
+    .navbar-nav {
+        gap: v.$espacio-nav;
+    }
+
+    .nav-link {
+        color: v.$color-texto-claro;
+        font-size: v.$texto-chico;
+        font-weight: v.$peso-semibold;
+        text-decoration: underline;
+        transition: color v.$duracion-base ease, transform v.$duracion-corta ease;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: v.$color-acento-claro;
+        }
+
+         &:active {
+            transform: scale(0.96);
+        }
+    }
+
+    .navbar-toggler {
+        border-color: v.$color-acento-claro;
+        transition: box-shadow v.$duracion-base ease;
+
+        &:focus {
+            box-shadow: 0 0 0 v.$anillo-foco v.$color-acento-claro;
+        }
+    }
+}

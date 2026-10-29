@@ -1,0 +1,102 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../utilities/animation";
+
+// MAIN Y BANDAS
+main {
+    @include m.flex(column, nowrap, flex-start, stretch, 0);
+}
+
+.banda {
+    @include m.flex(column, nowrap, normal, normal, v.$espacio-lg);
+    padding: v.$espacio-seccion v.$espacio-lateral;
+}
+
+.banda-oscura {
+    background-color: v.$color-primario;
+}
+
+.banda-suave {
+    background-color: v.$color-fondo-suave;
+}
+
+.banda-galeria {
+    padding-top: 0;
+}
+
+// HERO 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "texto"
+        "monograma";
+    align-items: center;
+    gap: v.$espacio-xl;
+
+    @include m.tablet {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "texto monograma";
+    }
+}
+
+.hero-texto {
+    grid-area: texto;
+    @include m.flex(column, nowrap, flex-start, stretch, v.$espacio-md);
+    animation: entrada-suave v.$duracion-entrada ease-out forwards;
+}
+
+.monograma {
+    grid-area: monograma;
+    @include m.flex(row, nowrap, center, center, 0);
+    width: v.$monograma-size;
+    height: v.$monograma-size;
+    padding: v.$monograma-padding;
+    background-color: v.$color-acento;
+    border: v.$borde-acento solid v.$color-acento-claro;
+    color: v.$color-texto-claro;
+    font-family: v.$fuente-titulos;
+    font-size: v.$monograma-fuente;
+    font-weight: v.$peso-bold;
+    transition: transform v.$duracion-base ease-out;
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    @include m.tablet {
+        width: v.$monograma-size-tablet;
+        height: v.$monograma-size-tablet;
+        font-size: v.$monograma-fuente-tablet;
+    }
+
+    @include m.desktop {
+        width: v.$monograma-size-desktop;
+        height: v.$monograma-size-desktop;
+        font-size: v.$monograma-fuente-desktop;
+    }
+}
+
+// CONTENEDOR DE TARJETAS
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "tarjeta-uno"
+        "tarjeta-dos";
+    gap: v.$espacio-lg;
+
+    @include m.desktop {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tarjeta-uno tarjeta-dos";
+        gap: v.$espacio-xl;
+    }
+}
+
+.tarjeta-uno {
+    grid-area: tarjeta-uno;
+}
+
+.tarjeta-dos {
+    grid-area: tarjeta-dos;
+}

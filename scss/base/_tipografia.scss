@@ -1,0 +1,66 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+// TÍTULOS
+h1 {
+    color: v.$color-texto-claro;
+    font-family: v.$fuente-titulos;
+    font-size: v.$title-size;
+    font-weight: v.$peso-bold;
+}
+
+h2 {
+    color: v.$color-primario;
+    font-family: v.$fuente-titulos;
+    font-size: v.$subtitle-size;
+    font-weight: v.$peso-bold;
+    margin-bottom: v.$espacio-xs;
+}
+
+h3 {
+    color: v.$color-primario;
+    font-family: v.$fuente-titulos;
+    font-size: v.$h3-size;
+    font-weight: v.$peso-bold;
+}
+
+// TEXTO
+p {
+    font-size: v.$body-size;
+    font-weight: v.$peso-normal;
+    overflow-wrap: break-word;
+}
+
+.destacado {
+    color: v.$color-acento;
+    font-size: v.$destacado-size;
+    font-weight: v.$peso-semibold;
+}
+
+.destacado-claro {
+    color: v.$color-acento-claro;
+}
+
+// ENLACES
+a {
+    color: v.$color-texto-claro;
+    font-size: v.$link-size;
+    font-weight: v.$peso-semibold;
+}
+
+.enlace {
+    color: v.$color-acento;
+}
+
+// LISTAS
+ul,
+ol {
+    @include m.flex(column, nowrap, flex-start, stretch, v.$espacio-sm);
+    padding-left: v.$sangria-lista;
+}
+
+li {
+    color: v.$color-primario;
+    font-size: v.$body-size;
+    font-weight: v.$peso-semibold;
+}

@@ -1,0 +1,10 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+footer {
+    @include m.flex(row, nowrap, center, center, 0);
+    padding: v.$espacio-lg v.$espacio-footer-x;
+    background-color: v.$color-primario-oscuro;
+    color: v.$color-texto-claro;
+    text-align: center;
+}

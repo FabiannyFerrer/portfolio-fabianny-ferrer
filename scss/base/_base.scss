@@ -1,0 +1,23 @@
+@use "../utilities/variables" as v;
+
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// BODY
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: v.$color-fondo-pagina;
+    color: v.$color-texto;
+    font-family: v.$fuente-texto;
+}
