@@ -69,7 +69,7 @@ p {
   overflow-wrap: break-word;
 }
 
-.destacado {
+.destacado, .destacado-claro {
   color: #bd3836;
   font-size: clamp(1.125rem, 2.5vw, 1.375rem);
   font-weight: 600;
