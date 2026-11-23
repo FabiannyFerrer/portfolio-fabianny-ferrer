@@ -38,6 +38,7 @@ p {
 }
 
 .destacado-claro {
+    @extend .destacado;
     color: v.$color-acento-claro;
 }
 
