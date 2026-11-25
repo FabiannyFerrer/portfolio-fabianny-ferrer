@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce la historia de Fabi Ferrer: de la administración y las operaciones de e-commerce al mundo IT."
+    />
+    <meta
+      name="keywords"
+      content="sobre mí, trayectoria, habilidades, transición a IT, administración"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <title>Sobre mí - Fabianny Ferrer</title>
   </head>
   <body>
@@ -60,8 +69,78 @@
       <section class="banda banda-oscura hero">
         <div class="hero-texto">
           <h1>Sobre mí</h1>
-          <p class="destacado destacado-claro">Página en construcción</p>
+          <p class="destacado destacado-claro">
+            Administración, organización y ganas de construir en tecnología
+          </p>
         </div>
+      </section>
+
+      <section class="banda">
+        <h2>Mi historia</h2>
+        <div class="tarjetas">
+          <article class="tarjeta tarjeta-uno" data-aos="fade-up">
+            <p>
+              Nací en Venezuela y hoy vivo en Argentina. Vengo del mundo
+              administrativo: trabajé como administradora y como asistente
+              contable, y hoy gestiono operaciones de Amazon Seller Central de
+              forma remota.
+            </p>
+          </article>
+          <article
+            class="tarjeta tarjeta-dos"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <p>
+              Con los años me di cuenta de que lo que más disfruto es ordenar
+              procesos, trabajar con datos y encontrar mejores formas de hacer
+              las cosas. Por eso decidí estudiar Sistemas de Información y
+              desarrollo web: quiero llevar esa mirada al mundo IT.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="banda banda-suave">
+        <div class="tarjetas">
+          <article class="tarjeta tarjeta-uno" data-aos="fade-up">
+            <h2>Mi trayectoria</h2>
+            <ul>
+              <li>Administradora técnica</li>
+              <li>Asistente contable</li>
+              <li>Operaciones en Amazon Seller Central (actual)</li>
+              <li>
+                Licenciatura en Sistemas de Información, FCE-UBA (en curso)
+              </li>
+              <li>Diplomatura Full Stack, Coderhouse (en curso)</li>
+            </ul>
+          </article>
+          <article
+            class="tarjeta tarjeta-dos"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h2>Habilidades</h2>
+            <ul>
+              <li>HTML, CSS, Bootstrap y GitHub</li>
+              <li>JavaScript (aprendiendo)</li>
+              <li>Excel y reportes de datos</li>
+              <li>Organización, comunicación remota y atención al detalle</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="banda">
+        <article class="tarjeta" data-aos="fade-up">
+          <h2>Qué estoy buscando</h2>
+          <p>
+            Mi objetivo es dar mi primer paso en IT, en un equipo donde pueda
+            aprender de personas con más experiencia y aportar lo que traigo de
+            mi trabajo en operaciones: orden, constancia y ganas de resolver
+            problemas.
+          </p>
+        </article>
       </section>
     </main>
 
@@ -74,5 +153,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      if (typeof AOS !== "undefined") {
+        AOS.init({ once: false, duration: 500 });
+      }
+    </script>
   </body>
 </html>
